@@ -631,7 +631,7 @@ body.contact {
 	opacity: 0.5;
 }
 .breadcrumbs__link-active:hover {
-  	cursor: no-drop;
+  	cursor: text;
 	text-decoration: none !important;
 }
 .card .btn {
@@ -758,6 +758,8 @@ body.contact {
 	border-right: none;
 	color: #666053;
 }
+
+/***************  CONTENT SHOW *******************/
 #content-show {
 	display: none;
 }
