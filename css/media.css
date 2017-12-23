@@ -1,0 +1,30 @@
+@media screen and (max-width: 800px) {
+	.menu__hidden-arrow {
+		display: inline-block;
+		font-size: 25px;
+		color: #9D9582;
+	}
+	nav {
+		position: absolute;
+		left: -100%;
+		z-index: 5;
+	}
+	#menu-toggle:checked ~ nav {
+		position: relative;
+		left: 0;
+		transition: 1s;
+	}
+	#menu-toggle:checked ~ label {
+		transform: rotate(540deg);
+		transition: 1s;
+	}
+}
+@media screen and (max-width: 510px) {
+	.size-table td {
+		padding: 2px;
+		border: 2px solid white;
+	}
+	section.description {
+		padding: 0 10px !important;
+	}
+}
