@@ -588,6 +588,9 @@ body.contact {
 .font__other {
 	font-family: 'RobotoCondensedRegular', 'Arial', sans-serif !important;
 }
+.single__page {
+	overflow: hidden; /* becouse gallery was made horizontal scroll*/
+}
 .single__page > .container {
 	background-color: white;
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -827,11 +830,30 @@ body.contact {
 	margin-bottom: 20px;
 	border-radius: 5px;
 }
-.ekko-lightbox .modal-dialog{
+.ekko-lightbox {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.ekko-lightbox .modal-dialog {
 	position: relative;
 }
-.ekko-lightbox: hover {
-	cursor: pointer;
+.ekko-lightbox .modal-content {
+	background-color: transparent;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+.ekko-lightbox img {
+	animation: opac 2s;
+}
+@keyframes opac {
+	from {
+		opacity: 0.7;
+		transform: scale(0.7);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
 }
 .ekko-lightbox:before,
 .ekko-lightbox:after {
